@@ -1,8 +1,8 @@
 {
   "invoice_number": {
     "value": "INV-2024-00783",
-    "confidence": 0.6173,
-    "localization_score": 1.0,
+    "confidence": 0.5823,
+    "localization_score": 0.9,
     "anchor_validation_score": 0.0,
     "anchor_text": "\nINVOICE\n\nVendor:   Apex Office Supplies Ltd.\n          123 Commerce Street\n          New York, NY 10001\n          Tel: (212) 555-0187\n\nBill To:  Momentum Analytics Inc.\n          47 Park Avenue, Suite 800\n          New York, NY 10016\n\nInvoice Number : INV-2024-00783\nInvoice Date   : March 15, 2024\nDue Date       : April 14, 2024\nPayment Terms  : Net 30\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nDESCRIPTION                      QTY    UNIT    TOTAL\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nPremium A4 Paper (500 sheets)     20   $12.50   $250.00\nWhiteboard Markers (Set of 8)     15    $8.99   $134.85\nErgonomic Mouse Pad               10   $19.99   $199.90\nUSB-C Charging Hub                 5   $49.99   $249.95\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n                                        Subtotal  $834.70\n                                       Tax (8%)   $66.78\n                                          TOTAL  $901.48\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\nPayment Method: Wire Transfer\nBank: First National Bank\nAccount: 4521-XXXX-XXXX-7823\nRouting: 021000089\n\nPlease include the invoice number in your payment reference.\nLate payments incur a 1.5% monthly fee.\n\nAuthorised by: Jennifer Walsh, Accounts Manager\n",
     "anchor_method": "gradient",
@@ -11,15 +11,15 @@
     "entropy_score": 0.9997,
     "mlm_perplexity": 70.75,
     "confidence_interval": [
-      0.5,
+      0.35,
       0.5
     ]
   },
   "invoice_total": {
     "value": "901.48",
-    "confidence": 0.7367,
+    "confidence": 0.7857,
     "localization_score": 1.0,
-    "anchor_validation_score": 0.6,
+    "anchor_validation_score": 0.8,
     "anchor_text": "\nINVOICE\n\nVendor:   Apex Office Supplies Ltd.\n          123 Commerce Street\n          New York, NY 10001\n          Tel: (212) 555-0187\n\nBill To:  Momentum Analytics Inc.\n          47 Park Avenue, Suite 800\n          New York, NY 10016\n\nInvoice Number : INV-2024-00783\nInvoice Date   : March 15, 2024\nDue Date       : April 14, 2024\nPayment Terms  : Net 30\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nDESCRIPTION                      QTY    UNIT    TOTAL\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nPremium A4 Paper (500 sheets)     20   $12.50   $250.00\nWhiteboard Markers (Set of 8)     15    $8.99   $134.85\nErgonomic Mouse Pad               10   $19.99   $199.90\nUSB-C Charging Hub                 5   $49.99   $249.95\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n                                        Subtotal  $834.70\n                                       Tax (8%)   $66.78\n                                          TOTAL  $901.48\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\nPayment Method: Wire Transfer\nBank: First National Bank\nAccount: 4521-XXXX-XXXX-7823\nRouting: 021000089\n\nPlease include the invoice number in your payment reference.\nLate payments incur a 1.5% monthly fee.\n\nAuthorised by: Jennifer Walsh, Accounts Manager\n",
     "anchor_method": "gradient",
     "interpretation": "MEDIUM    \u2014 extraction is plausible; consider manual review",
@@ -27,8 +27,8 @@
     "entropy_score": 0.9792,
     "mlm_perplexity": 70.75,
     "confidence_interval": [
-      0.65,
-      0.95
+      0.75,
+      1.0
     ]
   },
   "invoice_date": {
@@ -49,17 +49,17 @@
   },
   "vendor_name": {
     "value": "Apex Office Supplies Ltd.",
-    "confidence": 0.8571,
+    "confidence": 0.7836,
     "localization_score": 1.0,
-    "anchor_validation_score": 1.0,
+    "anchor_validation_score": 0.7,
     "anchor_text": "\nINVOICE\n\nVendor:   Apex Office Supplies Ltd.\n          123 Commerce Street\n          New York, NY 10001\n          Tel: (212) 555-0187\n\nBill To:  Momentum Analytics Inc.\n          47 Park Avenue, Suite 800\n          New York, NY 10016\n\nInvoice Number : INV-2024-00783\nInvoice Date   : March 15, 2024\nDue Date       : April 14, 2024\nPayment Terms  : Net 30\n\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nDESCRIPTION                      QTY    UNIT    TOTAL\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\nPremium A4 Paper (500 sheets)     20   $12.50   $250.00\nWhiteboard Markers (Set of 8)     15    $8.99   $134.85\nErgonomic Mouse Pad               10   $19.99   $199.90\nUSB-C Charging Hub                 5   $49.99   $249.95\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n                                        Subtotal  $834.70\n                                       Tax (8%)   $66.78\n                                          TOTAL  $901.48\n\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n\nPayment Method: Wire Transfer\nBank: First National Bank\nAccount: 4521-XXXX-XXXX-7823\nRouting: 021000089\n\nPlease include the invoice number in your payment reference.\nLate payments incur a 1.5% monthly fee.\n\nAuthorised by: Jennifer Walsh, Accounts Manager\n",
     "anchor_method": "gradient",
-    "interpretation": "HIGH      \u2014 extraction is reliable",
+    "interpretation": "MEDIUM    \u2014 extraction is plausible; consider manual review",
     "attention_score": 0.2477,
     "entropy_score": 0.9797,
     "mlm_perplexity": 70.75,
     "confidence_interval": [
-      1.0,
+      0.7,
       1.0
     ]
   }

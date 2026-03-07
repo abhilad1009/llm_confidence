@@ -76,7 +76,18 @@ def _bar(score: float, width: int = 18) -> str:
     return "[" + "█" * filled + "░" * (width - filled) + f"] {score:.0%}"
 
 
-def print_report(version_label: str, results: dict) -> None:
+def _print_attribution_heatmap(results: dict) -> None:
+    """Print token attribution heatmaps for v2/v3 results (gradient-based anchor)."""
+    from benchmark.visualize import print_attribution_heatmap
+    for field, r in results.items():
+        if r.anchor.token_attributions:
+            print_attribution_heatmap(
+                r.anchor.token_attributions,
+                title=f"Token Attribution — {field} (anchor method: {r.anchor.method})",
+            )
+
+
+def print_report(version_label: str, results: dict, show_heatmap: bool = False) -> None:
     print(f"\n{'═' * 64}")
     print(f"  {version_label} — MEDICAL RECORD CONFIDENCE REPORT")
     print(f"{'═' * 64}")
@@ -96,6 +107,9 @@ def print_report(version_label: str, results: dict) -> None:
             lo, hi = b.confidence_interval
             print(f"  95% CI    : [{lo:.1%}, {hi:.1%}]")
     print(f"{'═' * 64}")
+
+    if show_heatmap:
+        _print_attribution_heatmap(results)
 
 
 def print_comparison(all_results: dict[str, dict]) -> None:
@@ -122,6 +136,8 @@ def main() -> None:
     parser.add_argument("--trials", type=int, default=10)
     parser.add_argument("--no-mlm", action="store_true")
     parser.add_argument("--no-4bit", action="store_true")
+    parser.add_argument("--show-heatmap", action="store_true",
+                        help="Show token attribution heatmap for v2/v3 (gradient anchor)")
     args = parser.parse_args()
 
     load_4bit = None if not args.no_4bit else False
@@ -145,7 +161,7 @@ def main() -> None:
             n_trials=args.trials, corruption_rate=0.60
         )
         results = e.extract_fields(CLINICAL_NOTE, FIELDS)
-        print_report("v2_intermediate (gradient)", results)
+        print_report("v2_intermediate (gradient)", results, show_heatmap=args.show_heatmap)
         all_results["v2"] = results
 
     if "v3" in versions_to_run:
@@ -156,7 +172,7 @@ def main() -> None:
             load_in_4bit=load_4bit, n_trials=args.trials, corruption_rate=0.60
         )
         results = e.extract_fields(CLINICAL_NOTE, FIELDS)
-        print_report("v3_advanced (entropy + MLM)", results)
+        print_report("v3_advanced (entropy + MLM)", results, show_heatmap=args.show_heatmap)
         all_results["v3"] = results
 
     if len(all_results) > 1:

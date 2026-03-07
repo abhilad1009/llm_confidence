@@ -7,5 +7,6 @@ wheels/
 *.egg-info
 hub/
 xet/
+datasets/
 # Virtual environments
 .venv

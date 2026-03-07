@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(uv run python -m pytest test.py -v)"
+      "Bash(uv run python -m pytest test.py -v)",
+      "Bash(grep -E \"\\\\.\\(py|toml|txt\\)$\")"
     ]
   }
 }
